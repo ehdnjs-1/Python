@@ -10,7 +10,7 @@ print("당신은 금고를 발견했습니다.")
 print("금고를 열기 위해 암호해제를 진행하시겠습니까? (예/아니오)")
 answer = input("답변: ")
 
-if answer.strip() != "예":
+if answer.strip() != "예" or answer.strip() != "응":
     print("암호해제를 중단합니다.")
     sys.exit()
 
