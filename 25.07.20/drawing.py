@@ -27,3 +27,4 @@ turtle.done()
 # The circle has a radius of 80 pixels, and the square has a side length of 80 pixels.  
 # The turtle starts at the bottom of the circle, draws it, then moves to draw the square centered at the origin.
 # The turtle graphics library is a popular way to introduce programming concepts in Python.
+# turtle.done() keeps the window open until closed by the user.
