@@ -35,9 +35,13 @@ for guess_tuple in itertools.product(password, repeat=len(secret_code)):
         break
 
 # 2. 암호 확인 코드 입력
-user_input = getpass.getpass("암호를 확인하기 위한 코드를 입력하세요: ")
-if user_input == "dowon":
-    print(f"분석된 코드는: {secret_code}")
-else:
-    print("접근 거부")
-    sys.exit()
+max_attempts = 3
+for attempt in range(max_attempts):
+    user_input = getpass.getpass(f"암호를 확인하기 위한 코드를 입력하세요 (시도 {attempt + 1}/{max_attempts}): ")
+    if user_input == "dowon":
+        print("암호가 일치합니다. ")
+        break
+    else:
+        print("접근 거부.")
+        if attempt < max_attempts - 1:
+            print("다시 시도하세요.")
