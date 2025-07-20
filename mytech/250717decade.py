@@ -30,7 +30,7 @@ for guess_tuple in itertools.product(password, repeat=len(secret_code)):
         found_code = guess
         break
     # 6초가 지나면 중단
-    if time.time() - start_time > 6:
+    if time.time() - start_time > 10:
         print("패스워드 분석완료!")
         break
 
