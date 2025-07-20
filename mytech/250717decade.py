@@ -17,7 +17,7 @@ max_attempts = 3
 for attempt in range(max_attempts):
     user_input = getpass.getpass("암호를 입력하세요: ")
     if user_input == real_password:
-        print("접근 허가")
+        print("환영합니다 도원님")
         break
     else:
         print("접근 거부")
