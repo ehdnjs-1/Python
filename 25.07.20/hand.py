@@ -31,3 +31,10 @@ while True:
 
 cap.release()
 cv2.destroyAllWindows()
+# This code captures video from the webcam, processes it to detect hand landmarks using MediaPipe,
+if __name__ == "__main__":
+    # and draws black dots on the fingertips of detected hands.
+    pass
+# The program will exit when the ESC key is pressed.
+# The code uses OpenCV for video capture and display, and MediaPipe for hand tracking.  
+# It draws black dots on the fingertips of detected hands.
