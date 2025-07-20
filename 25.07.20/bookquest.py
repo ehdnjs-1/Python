@@ -26,3 +26,8 @@ def get_book_info_aladin(title, api_key):
 api_key = "여기에_발급받은_API_KEY_입력"
 result = get_book_info_aladin("파이썬", api_key)
 print(result)
+# This code defines a function to get book information from Aladin's API.
+# It takes a book title and an API key as input, queries the Aladin API,
+# and returns the book title, publisher, and authors if found.
+# If the book is not found or an error occurs, it returns None.
+# This code is part of a larger project that interacts with book APIs.
